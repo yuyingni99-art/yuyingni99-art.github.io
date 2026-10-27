@@ -1,1 +1,5 @@
-# yuyingni99-art.github.io
+# Sine 个人作品集
+
+与当前公开网站相同的静态页面和脱敏展示素材。
+
+使用 GitHub Pages 从默认分支的根目录发布，无需安装依赖或构建。

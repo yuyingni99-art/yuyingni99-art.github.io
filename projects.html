@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>项目｜Sine 倪钰颖</title>
+  <meta name="description" content="财务与组织协作中的工具实践，展示实际问题、本人职责与工具流程。">
+  
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#faf8f4">
+  <meta name="format-detection" content="telephone=no">
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="Sine 倪钰颖">
+  <meta property="og:title" content="项目｜Sine 倪钰颖">
+  <meta property="og:description" content="财务与组织协作中的工具实践，展示实际问题、本人职责与工具流程。">
+  <meta property="og:image" content="https://yuyingni99-art.github.io/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg?v=20261025-type-nav" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/yusan.css?v=20261025-project-nav-3">
+  <script src="assets/yusan-effects.js?v=20261025-type-nav" defer></script>
+  <script src="assets/projects.js?v=20261025-project-nav-3" defer></script>
+  <script src="assets/design.js" defer></script>
+  <link rel="canonical" href="https://yuyingni99-art.github.io/projects.html">
+</head>
+
+<body class="projects-page">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html">首页</a>
+      <nav class="site-nav" aria-label="主导航">
+        <ul>
+          <li><a href="projects.html" aria-current="page">项目</a></li>
+          <li><a href="experience.html">经历</a></li>
+          <li><a href="about.html">关于</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" id="index" aria-labelledby="page-title">
+      <div class="container">
+        <h1 class="page-hero__title" id="page-title">项目</h1>
+
+        <nav class="toc" aria-label="项目目录">
+          <div>
+            <h2 class="group__title">精选</h2>
+            <ol>
+              <li><a href="#disability-levy"><span class="toc__name">残保金测算器</span></a></li>
+              <li><a href="#contracts"><span class="toc__name">合同业务管理系统</span></a></li>
+              <li><a href="#inventory"><span class="toc__name">UCUP 库存管理系统</span></a></li>
+            </ol>
+          </div>
+          <div>
+            <h2 class="group__title">更多实践</h2>
+            <ol>
+              <li><a href="#sms-journal"><span class="toc__name">银行短信记账工具</span></a></li>
+              <li><a href="#roster"><span class="toc__name">花名册小工具</span></a></li>
+              <li><a href="#certificates"><span class="toc__name">获奖证书批量生成器</span></a></li>
+              <li><a href="#reimbursement"><span class="toc__name">AI 报销整理助手</span></a></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <nav class="reading-nav" aria-label="项目阅读导航">
+      <div class="container">
+        <ul>
+          <li><a href="#disability-levy">残保金测算器</a></li>
+          <li><a href="#contracts">合同管理</a></li>
+          <li><a href="#inventory">库存管理</a></li>
+          <li><a href="#sms-journal">银行短信</a></li>
+          <li><a href="#roster">花名册</a></li>
+          <li><a href="#certificates">证书制作</a></li>
+          <li><a href="#reimbursement">报销整理</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <article class="case" id="disability-levy" aria-labelledby="t-levy">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">工作 · 财务测算</li>
+            </ul>
+            <h2 class="case__title" id="t-levy">残保金测算器</h2>
+            <p class="case__lead">算出预计残保金，再把不同就业安排的预计缴纳金额放在一起比较。</p>
+          </div>
+            <figure class="cover">
+              <div class="cover__frame">
+                <a href="assets/img/levy-redacted-v1.png" target="_blank" rel="noopener" aria-label="查看残保金测算器脱敏展示大图">
+                  <img class="project-screenshot" style="aspect-ratio: 1840 / 854" src="assets/img/levy-redacted-v1.png" width="1840" height="854" loading="lazy" decoding="async" alt="经 AI 辅助脱敏处理的残保金测算器界面，员工人数、工资、就业情况和测算结果已遮盖。">
+                </a>
+              </div>
+            </figure>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>财务测算与方案对比</dd></div>
+            <div><dt>项目职责</dt><dd>测算规则梳理、输入字段与页面设计、AI 辅助开发</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>先把几种安排算清楚</h3>
+              <p>手工测算时，就业月数一变就要重算，也不方便比较几种安排。工具将不同方案的预计残保金并排列出，便于判断哪种安排缴纳更少。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">录入员工人数、工资总额和残疾员工就业情况</span><span class="flow__by"><span class="sr-only">由</span>人工</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">按设定规则算出预计残保金</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">设置几种不同的就业月数安排</span><span class="flow__by"><span class="sr-only">由</span>人工</span></li>
+            <li><span class="flow__n" aria-hidden="true">4</span><span class="flow__text">并排列出各安排的预计残保金</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+    <article class="case" id="contracts" aria-labelledby="t-contracts">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">工作 · 财务</li>
+            </ul>
+            <h2 class="case__title" id="t-contracts">合同业务管理系统</h2>
+            <p class="case__lead">从合同文件中提取信息，整理成台账，再按业务和使用者身份分别查看。</p>
+          </div>
+            <div class="screenshot-gallery" data-screenshot-gallery>
+              <figure class="cover" id="contracts-categories" data-screenshot-panel>
+              <div class="cover__frame">
+                <a href="assets/img/contracts-categories-redacted-v1.png" target="_blank" rel="noopener" aria-label="查看合同系统功能分类脱敏展示大图">
+                  <img class="project-screenshot" style="aspect-ratio: 1814 / 867" src="assets/img/contracts-categories-redacted-v1.png" width="1814" height="867" loading="lazy" decoding="async" alt="经 AI 辅助脱敏处理的合同系统功能分类界面，已移除内部网络地址。">
+                </a>
+              </div>
+            </figure>
+              <figure class="cover" id="contracts-overview" data-screenshot-panel hidden>
+              <div class="cover__frame">
+                <a href="assets/img/contracts-overview-redacted-v1.png" target="_blank" rel="noopener" aria-label="查看合同系统业务概览脱敏展示大图">
+                  <img class="project-screenshot" style="aspect-ratio: 1814 / 867" src="assets/img/contracts-overview-redacted-v1.png" width="1814" height="867" loading="lazy" decoding="async" alt="经 AI 辅助脱敏处理的合同业务概览界面，业务名称、数量、金额及真实图表均已遮盖。">
+                </a>
+              </div>
+            </figure>
+              <div class="screenshot-switch" role="group" aria-label="切换合同系统截图" hidden>
+                <button type="button" data-screenshot-target="contracts-categories" aria-controls="contracts-categories" aria-pressed="true">功能分类</button>
+                <button type="button" data-screenshot-target="contracts-overview" aria-controls="contracts-overview" aria-pressed="false">业务概览</button>
+              </div>
+              <noscript><p><a href="assets/img/contracts-overview-redacted-v1.png" target="_blank" rel="noopener">查看业务概览脱敏大图</a></p></noscript>
+            </div>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>合同登记与业务信息查阅</dd></div>
+            <div><dt>项目职责</dt><dd>需求梳理、业务分类与查阅权限设计、页面设计及 AI 辅助开发</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>登记以后，还得方便查</h3>
+              <p>合同原先靠人工登记，业务信息也分散。现在将文件放入固定文件夹，即可扫描、识别并整理成分类台账。</p>
+              <p>同事按权限查阅对应业务，收入概览和趋势图方便了解运营情况。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">把合同文件放进固定的文件夹</span><span class="flow__by"><span class="sr-only">由</span>人工</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">扫描新合同，读取文件</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">提取关键信息，写入合同台账</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            <li><span class="flow__n" aria-hidden="true">4</span><span class="flow__text">按业务分页，按身份显示对应内容</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+    <article class="case" id="inventory" aria-labelledby="t-inventory">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">UCUP</li>
+            </ul>
+            <h2 class="case__title" id="t-inventory">UCUP 库存管理系统</h2>
+          </div>
+            <figure class="cover">
+            <div class="cover__frame">
+            <a href="assets/img/inventory-redacted.png" target="_blank" rel="noopener" aria-label="查看库存管理系统脱敏截图大图">
+            <img class="project-screenshot" style="aspect-ratio: 1673 / 940" src="assets/img/inventory-redacted.png" width="1673" height="940" loading="lazy" decoding="async" alt="库存管理系统脱敏截图，保留总览、物资查询和表格结构；库存数量、物资名称、编号、分类、库存状态及使用进度均已遮盖。">
+            </a>
+            </div>
+            </figure>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>UCUP 物资管理</dd></div>
+            <div><dt>项目职责</dt><dd>需求与流程设计、AI 辅助开发及测试上线</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>把物资管理搬到线上</h3>
+              <p>原先用 Excel 记录物资，查询和多人维护都不方便。系统将库存与出入库记录集中到线上，登记后自动更新数量，保留变动记录。访客仅可查看，修改由管理员操作。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">按名称或分类查询物资</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">管理员登记出入库</span><span class="flow__by"><span class="sr-only">由</span>人工</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">自动更新库存并保留记录</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+    <article class="case" id="sms-journal" aria-labelledby="t-sms">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">工作 · 财务</li>
+            </ul>
+            <h2 class="case__title" id="t-sms">银行短信记账工具</h2>
+            <p class="case__lead">按收支短信的格式规律提取信息，整理成日记账。</p>
+          </div>
+            <figure class="cover">
+            <div class="cover__frame">
+            <a href="assets/img/sms-page.png" target="_blank" rel="noopener" aria-label="查看短信流水录入器网页截图原图">
+            <img class="project-screenshot" style="aspect-ratio: 1912 / 922" src="assets/img/sms-page.png" width="1912" height="922" loading="lazy" decoding="async" alt="短信流水录入器网页截图，展示短信粘贴区域、识别流水按钮和导入飞书区域。">
+            </a>
+            </div>
+            </figure>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>银行短信整理与日记账录入</dd></div>
+            <div><dt>项目职责</dt><dd>短信格式与记账需求梳理、处理流程设计、AI 辅助开发</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>从已有短信里整理记录</h3>
+              <p>以前要登录不同网银整理流水。现在按银行收支短信的固定格式提取信息，自动整理成日记账，减少逐笔录入。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">收到的银行收支短信</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">按格式规律提取收支信息</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">整理成日记账</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+    <article class="case" id="roster" aria-labelledby="t-roster">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">工作 · 人事协作</li>
+            </ul>
+            <h2 class="case__title" id="t-roster">花名册小工具</h2>
+            <p class="case__lead">先识别资料，再由同事检查更正，最后录入飞书。</p>
+          </div>
+            <figure class="cover">
+              <div class="cover__frame">
+                <a href="assets/img/roster-redacted-v1.png" target="_blank" rel="noopener" aria-label="查看员工花名册助手脱敏展示大图">
+                  <img class="project-screenshot" style="aspect-ratio: 1581 / 995" src="assets/img/roster-redacted-v1.png" width="1581" height="995" loading="lazy" decoding="async" alt="经 AI 辅助脱敏处理的花名册助手界面，员工姓名和文件路径已遮盖，保留资料校对与确认写入区域。">
+                </a>
+              </div>
+            </figure>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>人事资料整理</dd></div>
+            <div><dt>项目职责</dt><dd>需求梳理、识别与人工复核流程设计、AI 辅助开发</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>少做一遍手工录入</h3>
+              <p>人事资料原先需要手工整理和录入。工具先识别资料，人事同事核对、更正后再录入飞书，保留人工检查这一步。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">人事资料</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">识别提取信息</span><span class="flow__by"><span class="sr-only">由</span>工具</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">检查与更正</span><span class="flow__by"><span class="sr-only">由</span>人事同事</span></li>
+            <li><span class="flow__n" aria-hidden="true">4</span><span class="flow__text">录入飞书</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+    <article class="case" id="certificates" aria-labelledby="t-cert">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">UCUP</li>
+            </ul>
+            <h2 class="case__title" id="t-cert">获奖证书批量生成器</h2>
+            <p class="case__lead">沿用统一的证书设计，替换获奖信息，批量制作。</p>
+          </div>
+            <figure class="cover">
+            <div class="cover__frame">
+            <a href="assets/img/certificates-redacted-v1.png" target="_blank" rel="noopener" aria-label="查看获奖证书批量生成器脱敏展示大图">
+            <img class="project-screenshot" style="aspect-ratio: 1608 / 978" src="assets/img/certificates-redacted-v1.png" width="1608" height="978" loading="eager" decoding="async" alt="经 AI 辅助脱敏处理的证书批量生成器界面，名单、编号、签名和赞助商标识已遮盖；预览标明非正式证书。">
+            </a>
+            </div>
+            </figure>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>赛事获奖证书批量制作</dd></div>
+            <div><dt>项目职责</dt><dd>证书视觉设计、字段与排版规则设计、批量制作流程及 AI 辅助开发</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>让一张设计可以反复使用</h3>
+              <p>同一版式的证书，不必逐张替换获奖信息。工具支持编辑内容、导入名单并批量制作，能按单人或多人队伍调整姓名展示与排版。</p>
+              <p>已针对不同获奖人数做过部分边界测试。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">填写证书内容</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">导入获奖名单</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">按人数自动排版</span></li>
+            <li><span class="flow__n" aria-hidden="true">4</span><span class="flow__text">预览并核对</span></li>
+            <li><span class="flow__n" aria-hidden="true">5</span><span class="flow__text">批量导出证书</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    
+    <article class="case" id="reimbursement" aria-labelledby="t-reimb">
+      <div class="container">
+        <div class="case__head">
+          <div class="case__intro">
+            <ul class="tags" aria-label="项目信息">
+            <li class="tag">工作 · 财务</li>
+            </ul>
+            <h2 class="case__title" id="t-reimb">AI 报销整理助手</h2>
+            <p class="case__lead">帮助员工在提交审批前整理材料、检查附件，准备报销明细。</p>
+          </div>
+            <figure class="cover">
+            <div class="cover__frame">
+            <img src="assets/img/reimbursement-800.webp" srcset="assets/img/reimbursement-800.webp 800w, assets/img/reimbursement-1600.webp 1600w" sizes="(min-width: 769px) 40vw, 100vw" width="1600" height="1000" loading="lazy" decoding="async" alt="票据分进文件夹，旁边是打了勾的检查清单；虚线另一侧颜色较浅的印章代表原有的审批流程。">
+            </div>
+            </figure>
+        </div>
+        <div class="case__grid">
+          <div class="case__content">
+            <dl class="meta">
+            <div><dt>应用场景</dt><dd>报销材料准备与附件自查</dd></div>
+            <div><dt>项目职责</dt><dd>报销规则梳理、标准提示词编写、使用流程设计与案例测试</dd></div>
+            </dl>
+            <div class="prose">
+              <h3>先把提交前的材料准备好</h3>
+              <p>针对报销附件遗漏、材料反复补充的问题，用标准提示词帮助员工分类材料、检查附件并生成明细。沿用公司现有的飞书审批，正式审核仍由财务完成。</p>
+              <h3>当前进展</h3>
+              <p>正在用以往报销案例测试识别准确性、附件遗漏和整理耗时，调整后再逐步推广。</p>
+            </div>
+          </div>
+          <div class="case__media">
+            <figure class="visual">
+            <div class="visual__frame">
+            <span class="visual__label">流程示意</span>
+            <ol class="flow">
+            <li><span class="flow__n" aria-hidden="true">1</span><span class="flow__text">准备报销材料</span><span class="flow__by"><span class="sr-only">由</span>员工</span></li>
+            <li><span class="flow__n" aria-hidden="true">2</span><span class="flow__text">按提示词分类材料、检查附件</span><span class="flow__by"><span class="sr-only">由</span>AI 模型</span></li>
+            <li><span class="flow__n" aria-hidden="true">3</span><span class="flow__text">生成报销明细</span><span class="flow__by"><span class="sr-only">由</span>AI 模型</span></li>
+            <li class="is-outside"><span class="flow__n" aria-hidden="true">4</span><span class="flow__text">提交飞书报销审批</span><span class="flow__by">原有流程</span></li>
+            <li class="is-outside"><span class="flow__n" aria-hidden="true">5</span><span class="flow__text">财务正式审核</span><span class="flow__by">原有流程</span></li>
+            </ol>
+            </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <a class="project-return" href="#index" hidden>回到目录<span aria-hidden="true">↑</span></a>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 <span lang="en">Sine</span> 倪钰颖</p>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="#index">项目目录</a></li>
+          <li><a href="index.html#contact">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
